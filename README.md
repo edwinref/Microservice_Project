@@ -2,6 +2,8 @@
 
 Ce projet vise à développer une compréhension approfondie de l'architecture micro-service à travers plusieurs axes centraux.
 
+![Capture d'écran 1](images/archi.jpeg)
+
 ## Objectif du TP
 
 Le but de ce TP est d'acquérir des compétences dans les domaines suivants :
@@ -19,6 +21,7 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 
 - Ajoutez les configurations nécessaires dans le fichier `application.properties`.
 - Lancez le serveur Eureka.
+  
 ![Capture d'écran 1](images/interfaceeurika.png)
 
 ## 2. Configuration Gateway
@@ -68,8 +71,8 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 ## 6. Création Automatique de la Base de Données avec Spring JPA
 
 - Utilisez Spring JPA pour créer automatiquement la base de données en fonction des entités.
-![Capture d'écran 1](images/mysqlClient.png)
-![Capture d'écran 1](images/mysqlVoitute.png)
+![Capture d'écran 1](images/bdclient.png)
+![Capture d'écran 1](images/bdvoiture.png)
 
 ## 7. Tests des Méthodes pour Client et Voiture
 
