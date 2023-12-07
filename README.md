@@ -19,7 +19,7 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 
 - Ajoutez les configurations nécessaires dans le fichier `application.properties`.
 - Lancez le serveur Eureka.
-![Capture d'écran 1](images/EurekaServer.png)
+![Capture d'écran 1](images/interfaceeurika.png)
 
 ## 2. Configuration Gateway
 
@@ -33,14 +33,17 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 ### 3.1 Configuration MySQL
 
 - Ajoutez les propriétés MySQL dans le fichier `application.properties`.
-![Capture d'écran 1](images/clientProperties.png)
+  
+![Capture d'écran 1](images/ProprirtClient.png)
+![Capture d'écran 1](images/ProprieterVoiture.png)
+
 
 ### 3.2 Application Client
 
 - Implémentez la classe principale du microservice client.
 - Ajoutez les couches nécessaires (modèle, repository, contrôleur, service).
 - Enregistrez le microservice client dans Eureka Server.
-![Capture d'écran 1](images/clientApplication.png)
+![Capture d'écran 1](images/MainClient.png)
 
 ## 4. Création Microservice Voiture
 
@@ -55,12 +58,12 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 - Implémentez la classe principale du microservice voiture.
 - Modélisez les données avec les associations nécessaires.
 - Enregistrez le microservice voiture dans Eureka Server.
-![Capture d'écran 1](images/VoitureApplication.png)
+![Capture d'écran 1](images/VoitureApp.png)
 
 ## 5. Enregistrement des Microservices dans Eureka Server
 
 - Assurez-vous que les microservices sont correctement enregistrés dans Eureka Server.
-![Capture d'écran 1](images/eurikaserveur.PNG)
+![Capture d'écran 1](images/interfaceeurika.PNG)
 
 ## 6. Création Automatique de la Base de Données avec Spring JPA
 
@@ -71,19 +74,25 @@ Nous adoptons une architecture basée sur les microservices, caractérisée par 
 ## 7. Tests des Méthodes pour Client et Voiture
 
 ### 7.1 Méthodes GET pour Client
+- Testez la méthode GET pour récupérer toutes les voitures.
+  
+ ![Capture d'écran 1](images/VoitureById.png)
 
 - Testez la méthode GET par ID pour récupérer un client spécifique.
-  ![Capture d'écran 1](images/clientById.PNG)
-  ![Capture d'écran 1](images/clientById2.PNG)
+  
+  ![Capture d'écran 1](images/GetClientById.PNG)
 
 
 
 ### 7.2 Méthodes GET pour Voiture
 
 - Testez la méthode GET pour récupérer toutes les voitures.
- ![Capture d'écran 1](images/VoitureById.png)
+  
+ ![Capture d'écran 1](images/VoitureListe.png)
+ 
 - Testez la méthode GET par ID pour récupérer une voiture spécifique.
-  ![Capture d'écran 1](images/voitureById1.png)
+  
+  ![Capture d'écran 1](images/GetVoitureById.png)
 
 
 
